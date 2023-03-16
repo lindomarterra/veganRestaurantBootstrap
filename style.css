@@ -1,0 +1,260 @@
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+*:root{
+
+--color1:#4F698C;
+--color2:#467302; 
+--color3:#BF9E60;
+--color4:#593C19;
+--color5:#BF3326;
+--color6:#22614E;
+--color7:#693524;
+--color8:#101112;
+--color9:#7BA1C9;
+
+--font-1: 'Bungee', cursive ;
+--font-2: 'PT Sans Narrow', sans-serif; ;
+--font-3: 'Bebas Neue', cursive;
+--font-4: 'Anton', sans-serif;
+--font-5: 'Rubik Moonrocks', cursive;
+}
+
+.font01{font-family: var(--font-1);}
+.font02{font-family: var(--font-2);}
+.font03{font-family: var(--font-3);}
+.font04{font-family: var(--font-4);}
+.font05{font-family: var(--font-5);}
+
+.bg-color01{background-color: var(--color1);}
+.bg-color02{background-color: var(--color2);}
+.bg-color03{background-color: var(--color3);}
+.bg-color04{background-color: var(--color4);}
+.bg-color05{background-color: var(--color5);}
+.bg-color06{background-color: var(--color6);}
+.bg-color07{background-color: var(--color7);}
+.bg-color08{background-color: var(--color8);}
+.bg-color09{background-color: var(--color9);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HEADER  */
+
+.nav_mobile{
+  display: none;  
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background-color: #000000;
+}
+
+.nav_desktop{ 
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background-color: #000000;
+}
+
+.nav_linkDesktop:hover{ border-bottom: 2px solid #fff; }
+
+.phone_header{
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+}
+.phone_header:hover{
+    color: #fff;
+    text-decoration: underline; 
+}
+.selected{border-bottom: 2px solid #fff;}
+
+
+    /*MEDIA QUERY*/
+
+@media screen and (max-width:575px) {
+    .nav_mobile{ display: block; }
+    .nav_desktop{ display: none; }
+    /* .class_main{ margin-top: 75px; } */
+}
+
+
+
+/* MAIN */
+
+.backGround{background-color: rgb(243, 235, 235);}
+
+.section-01{
+    background-image: url(img/backGround-00);
+    background-size: cover;    
+    background-position: center;          
+}
+
+.about_us{
+    font-family: var(--font-2); 
+    font-style: italic; 
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 2px #222;
+
+}
+.text_about{
+    font-family: var(--font-2);
+    font-size: 1.4rem;
+}
+
+.menuPlate01{
+    font-family: var(--font-2);
+    font-size: 2rem;
+    font-variant-caps: small-caps;
+}
+.menuTitle01{
+    font-family: var(--font-2);
+    font-size: 1.5rem;
+    font-variant-caps: small-caps;
+}
+
+.btn_MenuSlide{transition: all linear 200ms;}    
+
+.text_aboutProduct{line-height: 2.2rem;}
+
+.class_main{ margin-top: 100px; } 
+
+.fazerPedido{
+    text-shadow: 1px 1px 1px #22222218;
+}
+.fazerPedido:hover{ opacity: 60%; text-decoration: underline; }
+
+.go_youTube:hover{text-decoration: none;}
+
+.btn_comprar{ 
+    display: block;
+    background-color: #222222c4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.4rem;
+}
+
+.btn_comprar:hover{ 
+    outline: 4px solid  #222222c4;
+    outline-offset: 4px;
+    color: #fff;
+}
+
+
+
+/*FOOTER*/
+
+.hoverFooter:hover{ opacity: 50%; }
+.hoverFooter:hover{ opacity: 50%; }
+
+
+
+/*WHATSAPP*/
+
+.whatsapp_Img{
+    width: 35px;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 100;
+    transition: all linear 300ms;
+}
+.whatsapp_Img:hover{width: 45px;}
+
+
+
+
+/* PAGE MENU / CONTATO */
+
+.img_ifood{border-radius: 50%; width: 55px; transition: all 200ms linear;}
+.img_rappi{border-radius: 50%; width: 55px; transition: all 200ms linear;}
+.img_whats{width: 55px; transition: all 300ms linear;}
+
+.img_whats:hover{width: 60px; opacity: 60%;}
+.img_ifood:hover{width: 60px; opacity: 60%;}
+.img_rappi:hover{width: 60px; opacity: 60%;}
+
+.title_h3{ 
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-shadow: 2px 2px 2px #222;
+}
+
+
+
+
+
+
+/*  PAGE MODAL COMPRA  */
+
+.nomeProdutoModal{ 
+    text-shadow: 1px 1px 1px #222; 
+}
+
+.price{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #22222262;
+    border: none;
+    background-color: #fff;
+    color: black;
+}
+
+.qtdeProduto{
+    width: 60px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #222222a2;
+    opacity: 80%;
+}
+
+
+.valorApagar{
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-shadow: 1px 1px 1px #222;
+}
+.close{
+    width: 100px;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #22222248;
+    box-shadow: 2px 2px 2px #222;
+}
+
+.buy{
+    width: 100px;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #22222248;
+    box-shadow: 2px 2px 2px #222;
+    animation: pulsar linear 1s infinite ;
+}
+
+@keyframes pulsar{ from{ opacity: 25%;} to{ opacity: 100%;} }
+
+.btn-modal-hover:hover{ 
+    opacity: 60%; 
+    text-decoration: underline; 
+}
+
